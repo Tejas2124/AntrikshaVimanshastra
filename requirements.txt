@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymupdf
+langchain
+qdrant-client
+sentence-transformers
+openai
+tqdm
+langchain
+dotenv
+groq
