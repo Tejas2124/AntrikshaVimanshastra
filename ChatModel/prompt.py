@@ -6,7 +6,7 @@ read from the provided JSON Sources given in the context.
 
 Instructions:
 - Answer the question clearly
-- Cite the chunks which are used to generate the information, details about the chunks is given within the context along with the chunks in the metadata(page no,section,title).
+- Cite the chunks which are used to generate the information, details about the chunks is given within the context along with the chunks in the metadata, return page_number,section,title metadata of the chunk which is/are used for answering the query.
 - If multiple sections are used, cite all
 - Do NOT hallucinate
 
