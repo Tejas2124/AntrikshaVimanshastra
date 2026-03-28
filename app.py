@@ -39,6 +39,7 @@ with main_col:
         # Retrieve + Generate
         chunks = retrieve_chunks(user_query)
         context = convert_obj_to_json(chunks)
+        # response = answergenerator(user_query, json.dumps(context))
         response = answergenerator(user_query,context)
         
 
@@ -58,7 +59,6 @@ with right_col:
     docs = st.session_state.get("retrieved_docs", [])
     if docs:
         print(docs[0])
-        print(type(docs))
         for i, doc in enumerate(docs):
             with st.expander(f"Result {i+1} | Score: {doc['metadata']['score']:.4f}"):
                 st.write("**Content:**")

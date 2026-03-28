@@ -21,7 +21,7 @@ def convert_obj_to_json(chunks):
         "properties": obj.properties,
         "metadata": vars(obj.metadata),
     }
-    retrieved_chunks.append(chunk)
+        retrieved_chunks.append(chunk)
     chunks_json = json.dumps(retrieved_chunks, indent=2, default=str)
     return chunks_json
 
